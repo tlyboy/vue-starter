@@ -7,7 +7,7 @@
     <a
       i-carbon-logo-github icon-btn
       rel="noreferrer"
-      href="https://github.com/antfu/vitesse-lite"
+      href="https://github.com/tlyboy/vue-starter"
       target="_blank"
       title="GitHub"
     />

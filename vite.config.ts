@@ -16,6 +16,10 @@ export default defineConfig({
         'pinia',
         '@vueuse/core',
       ],
+      dirs: [
+        './src/composables',
+      ],
+      vueTemplate: true,
     }),
     UnoCSS(),
     vue(),

@@ -2,11 +2,14 @@ import '@unocss/reset/tailwind.css'
 import './assets/styles/main.css'
 import './assets/styles/nprogress.css'
 import 'uno.css'
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 import App from './App.vue'
 import router from './router'
 
 const app = createApp(App)
 const pinia = createPinia()
+
+pinia.use(piniaPluginPersistedstate)
 
 app.use(pinia)
 app.use(router)

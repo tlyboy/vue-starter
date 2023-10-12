@@ -6,4 +6,14 @@ const router = createRouter({
   routes,
 })
 
+router.beforeEach((to, from, next) => {
+  nProgress.start()
+
+  next()
+})
+
+router.afterEach(() => {
+  nProgress.done()
+})
+
 export default router

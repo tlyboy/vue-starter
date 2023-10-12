@@ -15,9 +15,20 @@ export default defineConfig({
         'vue-router',
         'pinia',
         '@vueuse/core',
+        {
+          axios: [
+            ['default', 'axios'],
+          ],
+          nprogress: [
+            ['*', 'nProgress'],
+          ],
+        },
       ],
       dirs: [
+        './src/utils',
+        './src/api',
         './src/composables',
+        './src/stores',
       ],
       vueTemplate: true,
     }),
@@ -29,6 +40,15 @@ export default defineConfig({
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
+    },
+  },
+  server: {
+    proxy: {
+      '/github': {
+        target: 'https://api.github.com',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/github/, ''),
+      },
     },
   },
 })

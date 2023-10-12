@@ -15,6 +15,8 @@
   "dependencies": {
     "@unocss/reset": "^0.56.5",
     "@vueuse/core": "^10.5.0",
+    "axios": "^1.5.1",
+    "nprogress": "^0.2.0",
     "pinia": "^2.1.6",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4"
@@ -24,6 +26,7 @@
     "@iconify-json/carbon": "^1.1.21",
     "@tsconfig/node18": "^18.2.2",
     "@types/node": "^18.17.17",
+    "@types/nprogress": "^0.2.1",
     "@unocss/eslint-plugin": "^0.56.5",
     "@vitejs/plugin-vue": "^4.3.4",
     "@vue/tsconfig": "^0.4.0",

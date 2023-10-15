@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import nProgress from 'nprogress'
 import routes from '~pages'
 
 const router = createRouter({

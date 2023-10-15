@@ -15,18 +15,8 @@ export default defineConfig({
         'vue-router',
         'pinia',
         '@vueuse/core',
-        {
-          axios: [
-            ['default', 'axios'],
-          ],
-          nprogress: [
-            ['*', 'nProgress'],
-          ],
-        },
       ],
       dirs: [
-        './src/utils',
-        './src/api',
         './src/composables',
         './src/stores',
       ],

@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 const request = axios.create()
 
 // 添加请求拦截器

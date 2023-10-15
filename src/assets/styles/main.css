@@ -1,3 +1,10 @@
+:root {
+  --brand-primary: #3498db;
+  --brand-primary-dark: #2980b9;
+  --brand-light: #ecf0f1;
+  --brand-dark: #121212;
+}
+
 html,
 body,
 #app {
@@ -6,6 +13,16 @@ body,
 
 html.dark {
   color-scheme: dark;
+}
+
+body {
+  background: var(--brand-light);
+  color: var(--brand-dark);
+}
+
+.dark body {
+  background: var(--brand-dark);
+  color: var(--brand-light);
 }
 
 ::view-transition-old(root),
@@ -28,11 +45,4 @@ html.dark {
 
 .dark::view-transition-new(root) {
   z-index: 1;
-}
-
-:root {
-  --brand-primary: #3498db;
-  --brand-primary-dark: #2980b9;
-  --brand-light: #ecf0f1;
-  --brand-dark: #121212;
 }

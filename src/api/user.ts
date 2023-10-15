@@ -1,4 +1,5 @@
 import type { AxiosRequestConfig } from 'axios'
+import request from '~/utils/request'
 import type { UserInfo } from '~/types/user'
 
 /**

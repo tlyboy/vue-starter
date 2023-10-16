@@ -1,6 +1,6 @@
 # vue-starter
 
-🚀 Vue Starter
+🚀 Vue starter
 
 ## 使用说明
 

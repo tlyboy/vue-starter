@@ -7,7 +7,7 @@ defineOptions({
 <template>
   <div>
     <p>
-      Vue Starter
+      Vue starter
     </p>
   </div>
 </template>

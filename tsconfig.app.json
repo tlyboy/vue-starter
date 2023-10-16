@@ -7,10 +7,7 @@
       "~/*": [
         "./src/*"
       ]
-    },
-    "types": [
-      "vite-plugin-vue-layouts/client"
-    ]
+    }
   },
   "include": [
     "env.d.ts",

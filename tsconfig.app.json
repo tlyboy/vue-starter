@@ -13,8 +13,9 @@
     "env.d.ts",
     "src/**/*",
     "src/**/*.vue",
+    "auto-imports.d.ts",
     "components.d.ts",
-    "auto-imports.d.ts"
+    "typed-router.d.ts"
   ],
   "exclude": [
     "src/**/__tests__/*"

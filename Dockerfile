@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM node:20-alpine
 COPY ./ /app
 WORKDIR /app
 RUN corepack enable

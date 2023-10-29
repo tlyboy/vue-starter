@@ -1,6 +1,5 @@
 import type { FetchOptions } from 'ofetch'
 import type { UserInfo } from '~/types/user'
-import request from '~/utils/request'
 
 /**
  *

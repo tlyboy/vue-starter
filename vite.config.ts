@@ -18,8 +18,8 @@ export default defineConfig({
         '@vueuse/core',
       ],
       dirs: [
+        './src/utils',
         './src/composables',
-        './src/stores',
       ],
       vueTemplate: true,
     }),

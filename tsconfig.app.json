@@ -2,10 +2,10 @@
   "extends": "@vue/tsconfig/tsconfig.dom.json",
   "compilerOptions": {
     "composite": true,
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
       "~/*": [
-        "./src/*"
+        "src/*"
       ]
     }
   },

@@ -5,7 +5,7 @@ RUN corepack enable
 RUN pnpm install
 RUN pnpm run build
 
-FROM nginx:stable-alpine
+FROM caddy
 RUN mkdir /app
 COPY --from=0 /app/dist /app
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY Caddyfile /etc/caddy/Caddyfile

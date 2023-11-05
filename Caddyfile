@@ -1,0 +1,15 @@
+:80 {
+  encode gzip
+
+  handle_path /github/* {
+    reverse_proxy https://api.github.com {
+      header_up Host {upstream_hostport}
+    }
+  }
+
+  handle {
+    root * /app
+    try_files {path} /index.html
+    file_server
+  }
+}

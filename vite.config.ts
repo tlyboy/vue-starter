@@ -35,13 +35,4 @@ export default defineConfig({
       '~/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
-  server: {
-    proxy: {
-      '/github': {
-        target: 'https://api.github.com',
-        changeOrigin: true,
-        rewrite: path => path.replace(/^\/github/, ''),
-      },
-    },
-  },
 })

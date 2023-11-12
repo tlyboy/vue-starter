@@ -6,11 +6,6 @@
   command = "pnpm run build"
 
 [[redirects]]
-  from = "/github/*"
-  to = "https://api.github.com/:splat"
-  status = 200
-
-[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200

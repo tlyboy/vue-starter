@@ -1,6 +1,5 @@
 import '@unocss/reset/tailwind.css'
 import './assets/styles/main.css'
-import './assets/styles/nprogress.css'
 import 'uno.css'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'

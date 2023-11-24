@@ -1,5 +1,5 @@
 <template>
-  <nav flex="~ gap-4" justify-center text-xl>
+  <nav flex justify-center gap-2 text-xl>
     <button icon-btn title="切换深色模式" @click="toggleDark">
       <div i-carbon-sun dark:i-carbon-moon />
     </button>

@@ -1,11 +1,11 @@
-# vue-starter
+# my-app
 
-🚀 Vue starter
+🎉 My App
 
 ## 使用说明
 
 ```sh
-npx degit tlyboy/vue-starter my-new-project
+npx degit tlyboy/vue-starter my-app
 ```
 
 ## 使用许可

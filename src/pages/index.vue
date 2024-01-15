@@ -9,7 +9,7 @@ definePage({
 <template>
   <div>
     <p>
-      🚀 Vue starter
+      🎉 My App
     </p>
   </div>
 </template>

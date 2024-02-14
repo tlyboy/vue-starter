@@ -20,8 +20,8 @@ export default defineConfig({
       ],
       dirs: [
         'src/utils',
-        'src/composables',
         'src/stores',
+        'src/composables',
       ],
       vueTemplate: true,
     }),

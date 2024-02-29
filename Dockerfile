@@ -3,9 +3,9 @@ FROM node:18-alpine as build-stage
 WORKDIR /app
 RUN corepack enable
 
-COPY .npmrc package.json pnpm-lock.yaml ./
+COPY package.json pnpm-lock.yaml ./
 RUN --mount=type=cache,id=pnpm-store,target=/root/.pnpm-store \
-    pnpm install --frozen-lockfile
+  pnpm install --frozen-lockfile
 
 COPY . .
 RUN pnpm build

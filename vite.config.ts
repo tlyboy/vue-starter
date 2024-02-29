@@ -1,43 +1,39 @@
-import path from 'node:path'
+import { fileURLToPath, URL } from 'node:url'
+
 import { defineConfig } from 'vite'
-import AutoImport from 'unplugin-auto-import/vite'
-import UnoCSS from 'unocss/vite'
+import VueRouter from 'unplugin-vue-router/vite'
 import VueMacros from 'unplugin-vue-macros/vite'
 import Vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
-import VueRouter from 'unplugin-vue-router/vite'
-import { VueRouterAutoImports } from 'unplugin-vue-router'
 import Layouts from 'vite-plugin-vue-layouts'
+import AutoImport from 'unplugin-auto-import/vite'
+import { VueRouterAutoImports } from 'unplugin-vue-router'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    AutoImport({
-      imports: [
-        'vue',
-        VueRouterAutoImports,
-        '@vueuse/core',
-      ],
-      dirs: [
-        'src/utils',
-        'src/stores',
-        'src/composables',
-      ],
-      vueTemplate: true,
+    VueRouter({
+      dts: 'src/typed-router.d.ts',
     }),
-    UnoCSS(),
-    VueRouter(),
     VueMacros({
       plugins: {
         vue: Vue(),
       },
     }),
-    Components(),
+    Components({
+      dts: 'src/components.d.ts',
+    }),
     Layouts(),
+    AutoImport({
+      imports: ['vue', VueRouterAutoImports, '@vueuse/core'],
+      dts: 'src/auto-imports.d.ts',
+      dirs: ['./src/utils', './src/stores', './src/composables'],
+      vueTemplate: true,
+    }),
   ],
   resolve: {
     alias: {
-      '~/': `${path.resolve(__dirname, 'src')}/`,
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
 })

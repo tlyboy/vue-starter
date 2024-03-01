@@ -8,8 +8,8 @@
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "types": [
       "vite/client",
-      "unplugin-vue-router/client",
       "unplugin-vue-macros/macros-global",
+      "unplugin-vue-router/client",
       "vite-plugin-vue-layouts/client"
     ]
   },

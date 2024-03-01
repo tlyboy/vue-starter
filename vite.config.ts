@@ -25,7 +25,7 @@ export default defineConfig({
     }),
     Layouts(),
     AutoImport({
-      imports: ['vue', VueRouterAutoImports, '@vueuse/core'],
+      imports: ['vue', VueRouterAutoImports, 'pinia', '@vueuse/core'],
       dts: 'src/auto-imports.d.ts',
       dirs: ['./src/utils', './src/stores', './src/composables'],
       vueTemplate: true,

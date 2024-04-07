@@ -13,6 +13,13 @@ module.exports = {
     ecmaVersion: 'latest',
   },
   rules: {
+    'vue/component-name-in-template-casing': [
+      'error',
+      'PascalCase',
+      {
+        registeredComponentsOnly: false,
+      },
+    ],
     'vue/multi-word-component-names': 'off',
   },
 }

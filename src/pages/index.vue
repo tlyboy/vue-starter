@@ -1,3 +1,3 @@
 <template>
-  <div>Vue Starter</div>
+  <div>Vue starter</div>
 </template>
